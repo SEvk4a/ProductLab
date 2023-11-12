@@ -3,7 +3,7 @@ const jwt = require('jsonwebtoken');
 
 const validateAccessToken = (token) => {
     try {
-        const userData = jwt.verify(token, process.env.JWT_ACCESS_SECRET);
+        const userData = jwt.verify(token, 'test12345');
         return userData;
     } catch (e) {
         return null;
