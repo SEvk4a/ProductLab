@@ -4,7 +4,7 @@ import { IUser } from "../models/IUser";
 export const authAPI = createApi({
     reducerPath: 'authAPI',
     baseQuery: fetchBaseQuery({
-        baseUrl: 'http://localhost:5000/api',
+        baseUrl: 'https://productlab-server.vercel.app/api',
     }),
     endpoints: (build) => ({
         registerUser: build.mutation<IUser, { mail: string, password: string }>({

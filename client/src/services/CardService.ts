@@ -10,7 +10,7 @@ interface DeleteCommentData {
 export const cardAPI = createApi({
     reducerPath: 'cardAPI',
     baseQuery: fetchBaseQuery({
-        baseUrl: 'http://localhost:5000/api',
+        baseUrl: 'https://productlab-server.vercel.app/api',
         prepareHeaders: (headers) => {
             headers.set("Authorization", `Bearer ${localStorage.getItem('token')}`);
             return headers;
