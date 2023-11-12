@@ -31,7 +31,7 @@ const CardDetails: FC = () => {
       >
         <div className="w-2/3 flex items-center bg-[#222222]">
           <img
-            src={'http://localhost:5000/' + card!.imgSrc}
+            src={'https://productlab-server.vercel.app/' + card!.imgSrc}
             className="w-full"
           />
         </div>

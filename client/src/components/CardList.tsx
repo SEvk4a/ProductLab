@@ -23,7 +23,7 @@ const CardList: FC = () => {
           <Link to={card._id}>
             <img
               key={card._id}
-              src={'http://localhost:5000/' + card.imgSrc}
+              src={'https://productlab-server.vercel.app/' + card.imgSrc}
               className="w-full rounded-lg cursor-pointer"
             />
           </Link>
