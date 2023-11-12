@@ -5,7 +5,7 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
 const generateTokens = (payload) => {
-    const accessToken = jwt.sign(payload, process.env.JWT_ACCESS_SECRET, { expiresIn: '24h' })
+    const accessToken = jwt.sign(payload, process.env.JWT_ACCESS_SECRET | 'test12345', { expiresIn: '24h' })
     return accessToken
 }
 
